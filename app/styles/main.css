@@ -1,0 +1,246 @@
+@import url(http://fonts.googleapis.com/css?family=Julius+Sans+One|Libre+Baskerville:400,400italic,700);
+
+/* base CSS */
+ * {
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;
+    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    /* Opera/IE 8+ */
+}
+html, body {
+    padding: 0;
+    margin: 0;
+}
+body {
+    color: #222;
+    background: #fff;
+    font-family:'Libre Baskerville', sans-serif;
+    font-size: 70%;
+}
+h1, h2 {
+    font-family:'Julius Sans One', sans-serif;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 0;
+}
+h1 {
+    padding: 70px 0 5px 0;
+    font-size: 3.2em;
+    color: #fff;
+}
+h2 {
+    margin: 1em 0 0.25em 0;
+    font-size: 1.8em;
+}
+h3 {
+    margin: 0.75em 0;
+    font-weight: 400;
+}
+h4 {
+    margin: 0 0 0.75em;
+    font-weight: 400;
+}
+a {
+    color: #658;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+    text-decoration: none;
+}
+a:visited {
+    color: #658;
+}
+a:hover, a:focus {
+    color: #87a;
+    text-decoration: underline;
+}
+p, ul {
+    margin: 0 0 0.75em;
+    line-height: 2;
+    text-align: justify;
+}
+ul {
+    padding: 0 0 0 20px;
+}
+strong {
+    font-weight: 700;
+}
+time {
+    font-style: italic;
+}
+/* global styles */
+ .right {
+    float: right;
+}
+.print-only {
+    display: none!important;
+}
+/* header */
+.top-background {
+    background: #658 url(../images/bg.png);
+}
+ header {
+    height: 200px;
+    color: #fff;
+    text-align: center;
+}
+.contact {
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+.lead {
+    font-size: 1.4em;
+    font-style: italic;
+    margin: 0;
+    text-align: center;
+}
+header a, header a:visited, header a:hover, header a:focus, .contact a, .contact a:visited, .contact a:hover, .contact a:focus {
+    color: #fff;
+}
+nav ul, .contact ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.contact ul {
+    display: inline-block;
+}
+nav li, .contact li {
+    display: inline-block;
+    float: left;
+    margin-right: 1px;
+}
+nav a, .contact a {
+    display: block;
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.65);
+    text-align: center;
+}
+nav a {
+    height: 35px;
+    line-height: 35px;
+    padding: 0 15px;
+    font-family:'Julius Sans One', sans-serif;
+    font-size: 1.2em;
+    font-style: normal;
+    text-transform: uppercase;
+}
+.contact a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.5em;
+}
+nav a:hover, nav a:focus, nav a:active, .contact a:hover, .contact a:focus, .contact a:active {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    text-decoration: none;
+}
+.contact {
+    height: 40px;
+    text-align: center;
+}
+.contact h2 {
+    margin: 0;
+    padding-right: 10px;
+    height: 40px;
+    line-height:40px;
+}
+/* main */
+ main {
+    padding: 0 10px;
+}
+/* Goodreads */
+ .gr_grid_book_container {
+    /* customize book cover container div here */
+    float: left;
+    width: 98px;
+    height: 130px;
+    padding: 0px 0px;
+    margin: 0 20px 20px 0;
+    overflow: hidden;
+}
+.gr_grid_book_container img {
+    max-width: 100%;
+}
+/* small-res CSS */
+ @media only screen and (max-width: 500px) {
+    .hide-for-small {
+        display: none!important;
+    }
+    header {
+        height: 140px;
+    }
+    h1 {
+        padding: 50px 0 5px 0;
+        font-size: 2.3em;
+    }
+    .lead {
+        font-size: 1.3em;
+    }
+}
+/* high-res CSS */
+ @media only screen and (min-width: 1132px) {
+    body {
+        font-size: 100%;
+    }
+    p {
+        font-size: 1em;
+    }
+    header {
+        height: 200px;
+        padding: 0 10%;
+        text-align: left;
+    }
+    .lead {
+        text-align: left;
+    }
+    h1 {
+        padding: 50px 0 5px 0;
+    }
+    nav a {
+        padding: 0 20px;
+        height: 50px;
+        line-height: 50px;
+    }
+    .contact a {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+    .contact {
+        width: 100%;
+        padding: 0 10%;
+        height: 50px;
+        text-align: left;
+    }
+    .contact h2 {
+        height: 50px;
+        line-height:50px;
+    }
+    .left-content {
+        float: left;
+        clear: left;
+        width: 66%;
+        padding: 1em 2% 1em 10%;
+    }
+    .sidebar {
+        float: right;
+        width: 33%;
+        padding: 1em 10% 1em 2%;
+    }
+    main {
+        padding: 0;
+    }
+}
+/* print */
+ @media only print {
+    .print-only {
+        display: block !important;
+    }
+    .hide-for-print {
+        display: none!important;
+    }
+}
