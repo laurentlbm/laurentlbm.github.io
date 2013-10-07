@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Julius+Sans+One|Libre+Baskerville:400,400italic,700);
+@import url(http://fonts.googleapis.com/css?family=Julius+Sans+One|Lora:400,400italic,700);
 
 /* base CSS */
  * {
@@ -16,8 +16,8 @@ html, body {
 body {
     color: #222;
     background: #fff;
-    font-family:'Libre Baskerville', sans-serif;
-    font-size: 80%;
+    font-family:'Lora', sans-serif;
+    font-size: 12.8px;
 }
 h1, h2 {
     font-family:'Julius Sans One', sans-serif;
@@ -35,11 +35,11 @@ h2 {
     font-size: 1.8em;
 }
 h3 {
-    margin: 0.75em 0;
+    margin: 0.5em 0;
     font-weight: 400;
 }
 h4 {
-    margin: 0 0 0.75em;
+    margin: 0 0 0.5em;
     font-weight: 400;
 }
 a {
@@ -47,18 +47,17 @@ a {
     -webkit-transition: all 0.25s ease-out;
     -moz-transition: all 0.25s ease-out;
     transition: all 0.25s ease-out;
-    text-decoration: none;
+    text-decoration: underline;
 }
 a:visited {
     color: #658;
 }
 a:hover, a:focus {
     color: #87a;
-    text-decoration: underline;
 }
 p, ul {
     margin: 0 0 0.75em;
-    line-height: 2;
+    line-height: 1.75;
     text-align: justify;
 }
 ul {
@@ -118,6 +117,7 @@ nav a, .contact a {
     background: rgba(255, 255, 255, 0.1);
     color: rgba(255, 255, 255, 0.65);
     text-align: center;
+    text-decoration: none;
 }
 nav a {
     height: 35px;
@@ -186,7 +186,7 @@ nav a:hover, nav a:focus, nav a:active, .contact a:hover, .contact a:focus, .con
 /* high-res CSS */
  @media only screen and (min-width: 1132px) {
     body {
-        font-size: 100%;
+        font-size: 16px;
     }
     p {
         font-size: 1em;
@@ -244,5 +244,26 @@ nav a:hover, nav a:focus, nav a:active, .contact a:hover, .contact a:focus, .con
     }
     .hide-for-print {
         display: none!important;
+    }
+
+    a, a:visited, a:hover, a:active, a:focus {
+        color: #222 !important;
+    }
+
+    header {
+        text-align: left;
+        color: #222;
+        height: auto;
+    }
+    .lead {
+        text-align: left;
+    }
+    h1 {
+        padding: 0;
+        color: #222;
+        font-size: 1.8em;
+    }
+    main {
+        padding: 0;
     }
 }
