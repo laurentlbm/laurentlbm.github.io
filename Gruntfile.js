@@ -157,9 +157,15 @@ module.exports = function (grunt) {
         // not enabled since usemin task does concat and uglify
         // check index.html to edit your build targets
         // enable this task if you prefer defining your build targets here
-        /*uglify: {
-            dist: {}
-        },*/
+        uglify: {
+            dist: {
+                files: {
+                  '<%= yeoman.dist %>/scripts/lte-ie7.min.js': [
+                    '<%= yeoman.app %>/scripts/lte-ie7.js'
+                  ]
+                }
+            }
+        },
         rev: {
             dist: {
                 files: {
@@ -313,6 +319,7 @@ module.exports = function (grunt) {
         'autoprefixer',
         'concat',
         'cssmin',
+        'uglify',
         'copy:dist',
         'rev',
         'usemin'

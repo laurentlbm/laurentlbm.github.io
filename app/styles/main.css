@@ -17,7 +17,7 @@ body {
     color: #222;
     background: #fff;
     font-family:'Libre Baskerville', sans-serif;
-    font-size: 70%;
+    font-size: 80%;
 }
 h1, h2 {
     font-family:'Julius Sans One', sans-serif;
@@ -148,6 +148,7 @@ nav a:hover, nav a:focus, nav a:active, .contact a:hover, .contact a:focus, .con
     padding-right: 10px;
     height: 40px;
     line-height:40px;
+    font-size: 1.6em;
 }
 /* main */
  main {
@@ -176,10 +177,10 @@ nav a:hover, nav a:focus, nav a:active, .contact a:hover, .contact a:focus, .con
     }
     h1 {
         padding: 50px 0 5px 0;
-        font-size: 2.3em;
+        font-size: 2em;
     }
     .lead {
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
 }
 /* high-res CSS */
@@ -225,12 +226,12 @@ nav a:hover, nav a:focus, nav a:active, .contact a:hover, .contact a:focus, .con
         float: left;
         clear: left;
         width: 66%;
-        padding: 1em 2% 1em 10%;
+        padding: 0 2% 1em 10%;
     }
     .sidebar {
         float: right;
         width: 33%;
-        padding: 1em 10% 1em 2%;
+        padding: 0 10% 1em 2%;
     }
     main {
         padding: 0;
