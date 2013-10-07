@@ -61,7 +61,6 @@ a:hover, a:focus {
 p, ul {
     margin: 0 0 0.75em;
     line-height: 1.75;
-    text-align: justify;
 }
 ul {
     padding: 0 0 0 20px;
@@ -236,6 +235,9 @@ nav a:hover, nav a:focus, nav a:active, .contact a:hover, .contact a:focus, .con
         clear: left;
         width: 66%;
         padding: 0 2% 1em 10%;
+    }
+    .left-content p, .left-content ul {
+        text-align: justify;
     }
     .sidebar {
         float: right;
