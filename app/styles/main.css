@@ -80,6 +80,7 @@ time {
 /* header */
 .top-background {
     background: #658 url(../images/bg.png);
+    background-size: 100px 100px;
 }
  header {
     height: 200px;
