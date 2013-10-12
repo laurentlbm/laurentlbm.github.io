@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Julius+Sans+One|Lora:400,400italic,700);
+@import url(http://fonts.googleapis.com/css?family=Julius+Sans+One);
 
 /* base CSS */
  * {
@@ -16,14 +16,16 @@ html, body {
 body {
     color: #222;
     background: #fff;
-    font-family:'Lora', sans-serif;
+    font-family: Cambria, Georgia, Times, "Times New Roman", serif;
     font-size: 12.8px;
+    line-height: 1.75;
 }
 h1, h2 {
-    font-family:'Julius Sans One', sans-serif;
+    font-family: 'Julius Sans One', sans-serif;
     text-transform: uppercase;
     font-weight: normal;
     margin: 0;
+    line-height: 1.1;
 }
 h1 {
     padding: 70px 0 5px 0;
@@ -35,12 +37,14 @@ h2 {
     font-size: 1.8em;
 }
 h3 {
-    margin: 0.5em 0;
-    font-weight: 400;
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 h4 {
-    margin: 0 0 0.5em;
-    font-weight: 400;
+    margin: 0;
+    font-size: 1em;
+    font-weight: normal;
 }
 a {
     color: #658;
@@ -65,9 +69,6 @@ p, ul {
 ul {
     padding: 0 0 0 20px;
 }
-strong {
-    font-weight: 700;
-}
 time {
     font-style: italic;
 }
@@ -83,6 +84,10 @@ time {
 }
 .print-only {
     display: none!important;
+}
+.light {
+    font-weight: normal;
+    color: #333;
 }
 /* header */
 .top-background {
@@ -161,6 +166,9 @@ nav a:hover, nav a:focus, nav a:active, .contact a:hover, .contact a:focus, .con
 /* main */
  main {
     padding: 0 10px;
+}
+.timespan {
+    margin: 0.2em 0 0 10px;
 }
 /* Goodreads */
  .gr_grid_book_container {
