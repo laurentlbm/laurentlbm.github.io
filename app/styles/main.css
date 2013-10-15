@@ -1,8 +1,6 @@
-@import url(http://fonts.googleapis.com/css?family=Julius+Sans+One);
-
 /* base CSS */
- * {
-    box-sizing: border-box;
+*,*:before,*:after {
+    box-sizing:border-box;
 }
 html, body {
     padding: 0;
@@ -120,7 +118,7 @@ header {
     text-align: center;
 }
 
-header h1 {
+header > h1 {
     padding-top: 40px;
 }
 
@@ -132,7 +130,7 @@ header h1 {
     text-align: center;
 }
 
-nav a {
+.nav__links > li > a {
     line-height: 35px;
     padding: 0 15px;
     font-family:'Julius Sans One', sans-serif;
@@ -149,18 +147,20 @@ nav a {
     text-align: center;
     height: 40px;
 }
-    .contact-bar a {
+    .contact-bar > h2 {
+        display: inline-block;
+        margin: 0;
+        padding-right: 10px;
+        vertical-align: top;
+        line-height: 40px;
+        font-size: 20.5px;
+        font-size: 1.6rem;
+    }
+    .contact-bar__links > li > a {
         width: 40px;
         line-height: 40px;
         font-size: 19px;
         font-size: 1.5em;
-    }
-    .contact-bar__title {
-        margin: 0;
-        padding-right: 10px;
-        line-height: 40px;
-        font-size: 20.5px;
-        font-size: 1.6rem;
     }
 /* main */
  main {
@@ -190,7 +190,7 @@ nav a {
     header {
         height: 130px;
     }
-    header h1 {
+    header > h1 {
         padding-top: 50px;
         font-size: 25px;
         font-size: 2rem;
@@ -210,13 +210,13 @@ nav a {
         padding: 0 10%;
         text-align: left;
     }
-    header h1 {
+    header > h1 {
         padding-top: 50px
     }
     .lead {
         text-align: left;
     }
-    nav a {
+    .nav__links > li > a {
         padding: 0 20px;
         line-height: 50px;
     }
@@ -225,10 +225,10 @@ nav a {
         height: 50px;
         text-align: left;
     }
-    .contact-bar__title {
-        line-height:50px;
+    .contact-bar > h2 {
+        line-height: 50px;
     }
-    .contact-bar a {
+    .contact-bar__links > li > a {
         width: 50px;
         line-height: 50px;
     }
@@ -237,8 +237,6 @@ nav a {
         clear: left;
         width: 66%;
         padding: 0 2% 1em 10%;
-    }
-    .left-content p, .left-content ul {
         text-align: justify;
     }
     .sidebar {
