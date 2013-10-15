@@ -23,9 +23,8 @@ h1, h2 {
     line-height: 1.1;
 }
 h1 {
-    padding: 70px 0 5px 0;
-    font-size: 41px;
-    font-size: 3.2rem;
+    font-size: 38px;
+    font-size: 3rem;
     color: #fff;
 }
 h2 {
@@ -46,13 +45,13 @@ h4 {
     font-weight: normal;
 }
 a {
-    color: #658;
+    color: #438851;
     transition: all 0.25s ease-out;
-    border-bottom: 1px solid #658;
+    border-bottom: 1px solid #438851;
     text-decoration: none;
 }
 a:hover, a:focus {
-    color: #87a;
+    color: #5a6;
     border-bottom: 0;
 }
 p, ul {
@@ -95,29 +94,36 @@ time {
     }
 /* header */
 .page-header {
-    background: #658 url(../images/bg.png);
-    background-size: 100px 100px;
+    background-color: #5a6;
 }
     .page-header a {
         display: block;
-        background: rgba(255, 255, 255, 0.1);
-        color: rgba(255, 255, 255, 0.65);
+        background-color: #67b175;
+        background-color: rgba(255, 255, 255, 0.1);
+        color: #dee;
+        color: rgba(255, 255, 255, 0.8);
         text-align: center;
         border-bottom: 0;
     }
     .page-header a:hover,
     .page-header a:focus,
     .page-header a:active {
-        background: rgba(255, 255, 255, 0.2);
+        background-color: #76bb84;
+        background-color: rgba(255, 255, 255, 0.2);
         color: #fff;
         border-bottom: 0;
     }
 
 header {
-    height: 200px;
+    height: 150px;
     color: #fff;
     text-align: center;
 }
+
+header h1 {
+    padding-top: 40px;
+}
+
 .lead {
     font-size: 18px;
     font-size: 1.4rem;
@@ -137,7 +143,8 @@ nav a {
 }
 
 .contact-bar {
-    background: rgba(0, 0, 0, 0.2);
+    background-color: #438851;
+    background-color: rgba(0, 0, 0, 0.2);
     color: #fff;
     text-align: center;
     height: 40px;
@@ -176,15 +183,15 @@ nav a {
     max-width: 100%;
 }
 /* small-res CSS */
- @media only screen and (max-width: 500px) {
+ @media only screen and (max-width: 600px) {
     .hide-for-small {
         display: none!important;
     }
     header {
-        height: 140px;
+        height: 130px;
     }
-    h1 {
-        padding: 50px 0 5px 0;
+    header h1 {
+        padding-top: 50px;
         font-size: 25px;
         font-size: 2rem;
     }
@@ -199,15 +206,15 @@ nav a {
         font-size: 16px;
     }
     header {
-        height: 200px;
+        height: 180px;
         padding: 0 10%;
         text-align: left;
     }
+    header h1 {
+        padding-top: 50px
+    }
     .lead {
         text-align: left;
-    }
-    h1 {
-        padding: 50px 0 5px 0;
     }
     nav a {
         padding: 0 20px;
