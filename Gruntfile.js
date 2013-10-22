@@ -160,9 +160,9 @@ module.exports = function (grunt) {
         uglify: {
             dist: {
                 files: {
-                  '<%= yeoman.dist %>/scripts/lte-ie7.min.js': [
-                    '<%= yeoman.app %>/scripts/lte-ie7.js'
-                  ]
+                    '<%= yeoman.dist %>/scripts/lte-ie7.min.js': [
+                        '<%= yeoman.app %>/scripts/lte-ie7.js'
+                    ]
                 }
             }
         },
