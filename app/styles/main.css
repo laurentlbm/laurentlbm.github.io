@@ -44,12 +44,12 @@ h4 {
 a {
     color: #438851;
     transition: all 0.25s ease-out;
-    border-bottom: 1px solid #438851;
     text-decoration: none;
 }
 a:hover, a:focus {
     color: #5a6;
     border-bottom: 0;
+    text-decoration: underline;
 }
 p, ul {
     margin: 0 0 0.75em;
@@ -101,6 +101,7 @@ time {
         color: rgba(255, 255, 255, 0.8);
         text-align: center;
         border-bottom: 0;
+        text-decoration: none;
     }
     .page-header a:hover,
     .page-header a:focus,
@@ -109,6 +110,7 @@ time {
         background-color: rgba(255, 255, 255, 0.2);
         color: #fff;
         border-bottom: 0;
+        text-decoration: none;
     }
 
 header {
@@ -169,13 +171,16 @@ header > h1 {
 }
 /* Goodreads */
  .gr_grid_book_container {
-    /* customize book cover container div here */
     float: left;
-    width: 98px;
+    width: 100px;
     height: 130px;
-    padding: 0px 0px;
+    padding: 0;
     margin: 0 20px 20px 0;
     overflow: hidden;
+    border: #ddd 1px solid;
+}
+ .gr_grid_book_container:hover {
+    border-color: #5a6;
 }
 .gr_grid_book_container img {
     max-width: 100%;
