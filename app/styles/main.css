@@ -36,9 +36,10 @@ h2 {
     font-size: 1.8rem;
 }
 h3 {
-    margin: 0;
+    margin: 0 0 0.25em;
     font-size: 14px;
     font-size: 1.1rem;
+    line-height: 1.2;
     font-weight: bold;
 }
 h4 {
@@ -174,7 +175,15 @@ header > h1 {
     width: 100%;
 }
 .timespan {
-    margin: 0.2em 0 0 10px;
+    margin-left: 10px;
+    line-height: 1.32;
+}
+.hide-details > h4 {
+    margin-bottom: 0.75em;
+}
+.hide-details > ul, .hide-details > p
+{
+    display: none;
 }
 /* Goodreads */
  .gr_grid_book_container {
