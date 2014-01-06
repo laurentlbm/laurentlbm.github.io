@@ -133,7 +133,7 @@ header {
 }
 
 header > h1 {
-    padding-top: 40px;
+    padding-top: 35px;
 }
 
 .lead {
@@ -182,7 +182,7 @@ header > h1 {
 }
 .timespan {
     margin-left: 10px;
-    line-height: 1.32;
+    line-height: 1.2;
 }
 .hide-details > h4 {
     margin-bottom: 0.75em;
@@ -225,7 +225,6 @@ footer {
         height: 130px;
     }
     header > h1 {
-        padding-top: 45px;
         font-size: 25px;
         font-size: 2rem;
     }
@@ -243,9 +242,6 @@ footer {
         height: 180px;
         padding: 0 10%;
         text-align: left;
-    }
-    header > h1 {
-        padding-top: 45px
     }
     .lead {
         text-align: left;
@@ -280,6 +276,10 @@ footer {
     }
     main {
         padding: 0;
+    }
+
+    .timespan {
+        line-height: 1.32;
     }
 }
 /* print */
