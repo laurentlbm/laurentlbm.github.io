@@ -2,38 +2,45 @@
 *,*:before,*:after {
     box-sizing:border-box;
 }
+
 html, body {
     padding: 0;
     margin: 0;
 }
+
 html {
     color: #444;
     font-family: Cambria, Georgia, Times, "Times New Roman", serif;
     font-size: 12.8px;
     line-height: 1.75;
 }
+
+html.wf-active {
+    font-family: "rooney-web", Cambria, Georgia, Times, "Times New Roman", serif;
+}
+
 body {
     background: #f5f5f5;
 }
 
-h2, h3 {
-    color: #222;
-}
-h1, h2 {
-    font-family: 'Julius Sans One', sans-serif;
-    text-transform: uppercase;
-    font-weight: normal;
-    margin: 0;
-    line-height: 1.1;
-}
 h1 {
+    margin: 0;
+    font-family: sans-serif;
     font-size: 38px;
     font-size: 3rem;
+    line-height: 1.2;
 }
 h2 {
     margin: 1em 0 0.25em 0;
     font-size: 23px;
     font-size: 1.8rem;
+    line-height: 1.2;
+    color: #222;
+}
+
+.wf-active h1, .wf-active h2 {
+    font-family: 'rooney-sans', sans-serif;
+    font-weight: 300;
 }
 h3 {
     margin: 0 0 0.25em;
@@ -41,6 +48,7 @@ h3 {
     font-size: 1.1rem;
     line-height: 1.2;
     font-weight: bold;
+    color: #222;
 }
 h4 {
     margin: 0;
@@ -139,11 +147,9 @@ header > h1 {
 .nav__links > li > a {
     line-height: 35px;
     padding: 0 15px;
-    font-family:'Julius Sans One', sans-serif;
     font-size: 15.36px;
     font-size: 1.2rem;
     font-style: normal;
-    text-transform: uppercase;
 }
 
 .contact-bar {
