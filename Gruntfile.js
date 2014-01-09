@@ -259,6 +259,8 @@ module.exports = function (grunt) {
                     src: [
                         '*.{ico,png,txt}',
                         '.htaccess',
+                        '.gitignore',
+                        'CNAME',
                         'images/{,*/}*.{webp,gif}',
                         'styles/fonts/{,*/}*.*'
                     ]
@@ -292,7 +294,7 @@ module.exports = function (grunt) {
             options: {
                 base: 'dist',
                 branch: 'master',
-                message: 'Auto-generated commit'
+                message: 'Update GitHub Page'
             },
             src: '**/*'
         }
@@ -334,8 +336,8 @@ module.exports = function (grunt) {
     ]);
 
     grunt.registerTask('default', [
-        'jshint',
-        'test',
+        //'jshint',
+        //'test',
         'build'
     ]);
 };
