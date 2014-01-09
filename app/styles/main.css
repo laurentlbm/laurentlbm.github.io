@@ -226,6 +226,7 @@ footer {
         height: 130px;
     }
     header > h1 {
+        padding-top: 45px;
         font-size: 25px;
         font-size: 2rem;
     }
