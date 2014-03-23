@@ -60,12 +60,10 @@ h4 {
 a {
     color: #438851;
     transition: all 0.25s ease-out;
-    text-decoration: none;
 }
 a:hover, a:focus {
     color: #5a6;
     border-bottom: 0;
-    text-decoration: underline;
 }
 p, ul {
     margin: 0 0 0.75em;
