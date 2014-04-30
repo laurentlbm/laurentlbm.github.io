@@ -290,14 +290,6 @@ module.exports = function (grunt) {
                 'svgmin',
                 'htmlmin'
             ]
-        },
-        'gh-pages': {
-            options: {
-                base: 'dist',
-                branch: 'master',
-                message: 'Update GitHub Page'
-            },
-            src: '**/*'
         }
     });
 
