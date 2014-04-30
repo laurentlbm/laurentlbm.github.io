@@ -33,7 +33,7 @@ h1 {
   font-weight: normal;
 }
 h2 {
-  margin: 1.5em 0 0.5em 0;
+  margin: 1.25em 0 0.5em 0;
   font-size: 19px;
   font-size: 1.5rem;
   line-height: 1.2;
@@ -154,7 +154,7 @@ header {
 }
 
 header h1 {
-  padding-top: 38px;
+  padding-top: 42px;
 }
 
 .lead {
@@ -201,9 +201,13 @@ header h1 {
   overflow: hidden;
   width: 100%;
 }
+section {
+  margin-bottom: 1em;
+}
+
 .timespan {
   margin-left: 10px;
-  line-height: 1.2;
+  line-height: 1.25;
   color: #999;
 }
 .hide-details > h4 {
