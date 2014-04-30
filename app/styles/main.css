@@ -10,7 +10,7 @@ html, body {
 
 html {
   color: #444;
-  font-family: Cambria, Georgia, Times, "Times New Roman", serif;
+  font-family: sans-serif;
   font-size: 12.8px;
   line-height: 1.75;
   text-rendering: optimizeLegibility;
@@ -18,7 +18,7 @@ html {
 }
 
 html.wf-active {
-  font-family: 'Open Sans', Cambria, Georgia, Times, "Times New Roman", serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -27,24 +27,20 @@ body {
 
 h1 {
   margin: 0;
-  font-family: sans-serif;
   font-size: 32px;
   font-size: 2.5rem;
   line-height: 1.2;
+  font-weight: normal;
 }
 h2 {
   margin: 1.5em 0 0.5em 0;
-  font-family: sans-serif;
   font-size: 19px;
   font-size: 1.5rem;
   line-height: 1.2;
+  font-weight: normal;
   color: #222;
 }
 
-.wf-active h1, .wf-active h2 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-}
 h3 {
   margin: 0 0 0.25em;
   font-size: 14px;
@@ -102,12 +98,39 @@ ul {
     float: left;
     margin-right: 1px;
   }
+
+/* Layout */
+@media only screen and (min-width : 998px) {
+  .container {
+    width: auto;
+    padding: 0% 8%;
+  }
+}
+@media only screen and (min-width : 1500px) {
+  .container {
+    width: auto;
+    padding: 0% 13%;
+  }
+}
+@media only screen and (min-width : 1750px) {
+  .container {
+    width: auto;
+    padding: 0% 18%;
+  }
+}
+@media only screen and (min-width : 2000px) {
+  .container {
+    width: auto;
+    padding: 0% 23%;
+  }
+}
+
 /* header */
 .page-header a {
   display: block;
   background-color: #67b175;
   background-color: rgba(255, 255, 255, 0.1);
-  color: #dee;
+  color: #eee;
   color: rgba(255, 255, 255, 0.8);
   text-align: center;
   border-bottom: 0;
@@ -130,7 +153,7 @@ header {
   text-align: center;
 }
 
-header > h1 {
+header h1 {
   padding-top: 38px;
 }
 
@@ -156,7 +179,7 @@ header > h1 {
   text-align: center;
   height: 40px;
 }
-  .contact-bar > h2 {
+  .contact-bar h2 {
     display: inline-block;
     margin: 0;
     padding-right: 10px;
@@ -189,9 +212,6 @@ header > h1 {
 .hide-details > ul, .hide-details > p
 {
   display: none;
-}
-section > h2 {
-  border-bottom: 1px solid #5a6;
 }
 
 /* Goodreads */
@@ -227,7 +247,7 @@ footer {
   header {
     height: 130px;
   }
-  header > h1 {
+  header h1 {
     font-size: 23px;
     font-size: 1.8rem;
   }
@@ -237,16 +257,15 @@ footer {
   }
 }
 /* high-res CSS */
- @media only screen and (min-width: 1132px) {
+ @media only screen and (min-width: 998px) {
   html {
     font-size: 14px;
   }
   header {
     height: 180px;
-    padding: 0 15%;
     text-align: left;
   }
-  header > h1 {
+  header h1 {
     padding-top: 50px;
   }
   .lead {
@@ -257,11 +276,10 @@ footer {
     line-height: 50px;
   }
   .contact-bar {
-    padding: 0 15%;
     height: 50px;
     text-align: left;
   }
-  .contact-bar > h2 {
+  .contact-bar h2 {
     line-height: 50px;
   }
   .contact-bar__links > li > a {
@@ -272,13 +290,13 @@ footer {
     float: left;
     clear: left;
     width: 66%;
-    padding: 0 2% 1em 15%;
+    padding: 0 2% 1em 0;
     text-align: justify;
   }
   .sidebar {
     float: right;
     width: 33%;
-    padding: 0 15% 1em 2%;
+    padding: 0 0 1em 2%;
   }
   main {
     padding: 0;
