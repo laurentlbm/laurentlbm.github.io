@@ -259,6 +259,7 @@ module.exports = function (grunt) {
                     src: [
                         '*.{ico,png,txt,pdf}',
                         '.htaccess',
+                        'web.config',
                         '.gitignore',
                         'CNAME',
                         'images/{,*/}*.{webp,gif}',
