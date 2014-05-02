@@ -1,5 +1,5 @@
 /* base CSS */
-*,*:before,*:after {
+* {
   box-sizing:border-box;
 }
 
@@ -71,14 +71,8 @@ ul {
   padding: 0 0 0 20px;
 }
 /* global styles */
- .left {
-  float: left;
-}
  .right {
   float: right;
-}
-.hide {
-  display: none!important;
 }
 .print-only {
   display: none!important;
