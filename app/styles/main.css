@@ -92,6 +92,10 @@ img {
   margin-bottom: 40px;
 }
 
+.experience:last-child {
+  margin-bottom: 0;
+}
+
 .experience__company {
   margin-top: 0;
   margin-bottom: 10px;
