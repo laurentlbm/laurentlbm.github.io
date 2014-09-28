@@ -151,33 +151,10 @@ module.exports = function(grunt) {
       }
     },
     cssmin: {
-      // This task is pre-configured if you do not wish to use Usemin
-      // blocks for your CSS. By default, the Usemin block from your
-      // `index.html` will take care of minification, e.g.
-      //
-      //     <!-- build:css({.tmp,app}) styles/main.css -->
-      //
-      // dist: {
-      //     files: {
-      //         '<%= yeoman.dist %>/styles/main.css': [
-      //             '.tmp/styles/{,*/}*.css',
-      //             '<%= yeoman.app %>/styles/{,*/}*.css'
-      //         ]
-      //     }
-      // }
     },
     htmlmin: {
       dist: {
         options: {
-          /*removeCommentsFromCDATA: true,
-        // https://github.com/yeoman/grunt-usemin/issues/44
-        //collapseWhitespace: true,
-        collapseBooleanAttributes: true,
-        removeAttributeQuotes: true,
-        removeRedundantAttributes: true,
-        useShortDoctype: true,
-        removeEmptyAttributes: true,
-        removeOptionalTags: true*/
         },
         files: [{
           expand: true,
@@ -258,24 +235,24 @@ module.exports = function(grunt) {
           }
         }, { // Gzipped assets (revisioned)
           expand: true,
-          cwd: 'dist/styles/',
+          cwd: 'dist/',
           src: [
-            '{,*/}*.css',
+            '{,*/}*.{css,js}',
             '{,*/}*.{ttf,svg,eot}',
           ],
-          dest: 'styles/',
+          dest: '',
           params: {
             ContentEncoding: 'gzip',
             CacheControl: 'max-age=31536000'
           }
         }, { // Non gzipped assets
           expand: true,
-          cwd: 'dist/styles/',
+          cwd: 'dist/',
           src: [
             '{,*/}*.{png,jpg,jpeg,gif,webp}',
             '{,*/}*.woff',
           ],
-          dest: 'styles/',
+          dest: '',
           params: {
             CacheControl: 'max-age=31536000'
           }
@@ -317,6 +294,7 @@ module.exports = function(grunt) {
     'autoprefixer',
     'concat',
     'cssmin',
+    'uglify',
     'copy:dist',
     'rev',
     'usemin'
