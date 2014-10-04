@@ -1,43 +1,128 @@
+/* Global styles
+   ========================================================================== */
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 1.42857;
+  color: #333;
+  background-color: #FAFAFA;
+}
 a {
+  color: #5A6;
   transition: all 0.5s ease-out;
   text-decoration: underline;
 }
-
 a:hover, a:focus {
   color: #48b;
 }
-
-ul {
-    padding: 0px 0px 0px 30px;
+a:focus {
+  outline: thin dotted;
+  outline-offset: -2px;
 }
-
+h1, h2, h3 {
+    margin-top: 21px;
+    font-weight: normal;
+}
+h1 {
+  font-size: 45px;
+  line-height: 1.1;
+}
+h2 {
+  font-size: 30px;
+  line-height: 1.1;
+}
+h3 {
+  font-size: 20px;
+  line-height: 1.1;
+}
+h4 {
+  font-size: 16px;
+  line-height: 1.1;
+}
+h5 {
+  font-size: 15px;
+  line-height: 1.1;
+}
+h6 {
+  font-size: 13px;
+  line-height: 1.1;
+}
+p {
+  margin: 0 0 10.5px;
+}
+small {
+  font-size: 65%;
+  line-height: 1;
+  color: #777;
+}
+ul, ol {
+  margin-top: 0px;
+  margin-bottom: 10.5px;
+}
+ul {
+  padding: 0px 0px 0px 30px;
+}
 hr {
   width: 60%;
   margin: 40px auto 50px;
   border: 0;
   border-top: 1px solid rgba(114, 120, 120, 0.2);
 }
-
 img {
   transition: opacity 250ms ease-in-out;
 }
-
 .b-loaded {
   opacity: 1;
 }
 
+/* Container
+   ========================================================================== */
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width:768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width:992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width:1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* Banner
+   ========================================================================== */
 .banner {
   min-height: 600px;
   background-color: #333;
   color: #fafafa;
 }
-
 .banner__nav {
   height: 50px;
   text-align: right;
   font-weight: 700;
 }
-
 .banner__nav a {
   display: inline-block;
   height: 50px;
@@ -46,36 +131,37 @@ img {
   line-height: 20px;
   text-decoration: none;
 }
-
 .banner__content {
-  margin-top: 150px;
+  padding-top: 150px;
   text-align: center;
 }
-
 .banner__title {
   margin-bottom: 40px;
   font-size: 60px;
 }
-
 .banner__subtitle {
   text-transform: uppercase;
   font-weight: 700;
 }
+@media (max-width:460px) {
+  .banner__title {
+    font-size: 48px;
+  }
+}
 
+/* Sections
+   ========================================================================== */
 .section {
   padding: 40px 0 75px;
 }
-
 .section__title {
   margin-bottom: 40px;
   text-align: center;
   color: #666;
 }
 
-.section--contact .section__title {
-  color: #fafafa;
-}
-
+/* Profile
+   ========================================================================== */
 .section--profile .section__text {
   max-width: 800px;
   margin: 0 auto;
@@ -83,35 +169,30 @@ img {
   font-size: 18px;
 }
 
-.section--experience,
-.section--skills {
+/* Experience
+   ========================================================================== */
+.section--experience, .section--skills {
   background-color: #f5f5f5;
 }
-
 .experience {
   position: relative;
   margin-bottom: 40px;
 }
-
 .experience:last-child {
   margin-bottom: 0;
 }
-
 .experience__company {
   margin-top: 0;
   margin-bottom: 10px;
 }
-
 .experience__title {
   margin-top: 0;
   margin-bottom: 10px;
   font-weight: 700;
 }
-
 .experience__period {
   margin-left: 20px;
 }
-
 .experience__logo {
   position: absolute;
   top: 0;
@@ -120,102 +201,100 @@ img {
   padding: 5px 0 0;
   text-align: center;
 }
-
 .experience__logo img {
   max-height: 100px;
   max-width: 100px;
 }
-
 .experience__details {
   margin-left: 150px;
   min-height: 100px;
 }
 
-.section--contact {
-  min-height: 350px;
-  background-color: #333;
-  color: #fafafa;
-}
-
-.contact {
-  margin-bottom: 10px;
-  padding: 0;
-  list-style: none;
-}
-
-.contact__info {
-  float: left;
-  width: 20%;
-  text-align: center;
-}
-
-.contact__link {
-  color: #f5f5f5;
-  font-size: 18px;
-  text-decoration: none;
-}
-
-.contact__link:hover, .contact__link:focus {
-  text-decoration: none;
-}
-
-.icon {
-  display: inline-block;
-  width: 32px;
-  height: 32px;
-  fill: currentColor;
-}
-
-.gr_grid_container {
-  margin-left: -15px;
-  margin-right: -15px;
-}
-
-.gr_grid_book_container {
-  float: left;
-  width: 25%;
-  height: 160px;
-  text-align: center;
-}
-
-@media (max-width: 991px) {
+@media (max-width:991px) {
   .experience__logo {
     width: 75px;
   }
-
   .experience__logo img {
     max-height: 75px;
     max-width: 75px;
   }
-
   .experience__details {
     margin-left: 125px;
     min-height: 75px;
   }
 }
-
-@media (max-width: 767px) {
+@media (max-width:767px) {
   .experience__logo {
     display: none;
   }
-
   .experience__details {
     margin-left: 0;
   }
 }
-
-@media (max-width: 460px) {
-  .banner__title {
-    font-size: 48px;
-  }
-
+@media (max-width:460px) {
   .experience__period {
     display: block;
     margin-left: 0;
     margin-top: 5px;
   }
+}
 
-  .gr_grid_book_container {
-    width: 50%;
+/* Skills
+   ========================================================================== */
+.section--skills .section__content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.skills--programming, .skills--practices {
+  float: left;
+  width: 50%;
+}
+
+.skills--tools {
+  float: left;
+  width: 100%;
+}
+
+@media (max-width:767px) {
+  .skills {
+    float: none;
+    width: auto;
   }
+}
+
+/* Contact
+   ========================================================================== */
+.section--contact {
+  min-height: 350px;
+  background-color: #333;
+  color: #fafafa;
+}
+.section--contact .section__title {
+  color: #fafafa;
+}
+.contact {
+  margin-bottom: 10px;
+  padding: 0;
+  list-style: none;
+}
+.contact__info {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+.contact__link {
+  color: #f5f5f5;
+  font-size: 18px;
+  text-decoration: none;
+}
+.contact__link:hover, .contact__link:focus {
+  text-decoration: none;
+}
+.icon {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  fill: currentColor;
 }
