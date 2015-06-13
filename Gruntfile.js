@@ -205,7 +205,7 @@ module.exports = function(grunt) {
         'htmlmin'
       ]
     },
-    aws: grunt.file.readJSON('/home/laurent/lebeaumartin.com/aws.json'),
+    aws: grunt.file.readJSON('../aws.json'),
     aws_s3: {
       options: {
         accessKeyId: '<%= aws.AWSAccessKeyId %>',
