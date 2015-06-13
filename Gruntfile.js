@@ -205,64 +205,13 @@ module.exports = function(grunt) {
         'htmlmin'
       ]
     },
-    aws: grunt.file.readJSON('../aws.json'),
-    aws_s3: {
+    'gh-pages': {
       options: {
-        accessKeyId: '<%= aws.AWSAccessKeyId %>',
-        secretAccessKey: '<%= aws.AWSSecretKey %>',
-        region: 'us-east-1',
-        bucket: 'lebeaumartin.com',
-        sslEnabled: true,
-        uploadConcurrency: 5,
-        downloadConcurrency: 5,
-        differential: true,
-        excludedFromGzip: ['*.png', '*.gif', '*.jpg', '*.jpeg', '*.woff', '*.pdf'],
+        base: 'dist',
+        branch: 'master',
+        message: 'Update GitHub Page'
       },
-      production: {
-        files: [{
-          action: 'delete',
-          cwd: 'dist/',
-          src: ['**'],
-          dest: '/',
-        }, { // Gzipped files (non-revisioned)
-          expand: true,
-          cwd: 'dist/',
-          src: ['{,*/}*.{html,ico}'],
-          dest: '',
-          params: {
-            ContentEncoding: 'gzip',
-            CacheControl: 'max-age=7200, must-revalidate'
-          }
-        }, { // Gzipped assets (revisioned)
-          expand: true,
-          cwd: 'dist/',
-          src: [
-            '{,*/}*.{css,js}',
-            '{,*/}*.{ttf,svg,eot}',
-          ],
-          dest: '',
-          params: {
-            ContentEncoding: 'gzip',
-            CacheControl: 'max-age=31536000'
-          }
-        }, { // Non gzipped assets
-          expand: true,
-          cwd: 'dist/',
-          src: [
-            '{,*/}*.{png,jpg,jpeg,gif,webp}',
-            '{,*/}*.woff',
-          ],
-          dest: '',
-          params: {
-            CacheControl: 'max-age=31536000'
-          }
-        }, { // PDF: No gzip, no caching
-          expand: true,
-          cwd: 'dist/',
-          src: ['*.pdf'],
-          dest: ''
-        }]
-      }
+      src: '**/*'
     }
   });
 
