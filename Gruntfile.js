@@ -177,7 +177,7 @@ module.exports = function(grunt) {
             //'.htaccess',
             //'web.config',
             //'.gitignore',
-            //'CNAME',
+            'CNAME',
             'images/{,*/}*.{webp,gif}',
             'styles/fonts/{,*/}*.*'
           ]
