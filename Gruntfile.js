@@ -208,12 +208,13 @@ module.exports = function(grunt) {
     'gh-pages': {
       options: {
         base: 'dist',
-        branch: 'master',
         message: 'Update GitHub Page'
       },
       src: '**/*'
     }
   });
+
+  grunt.loadNpmTasks('grunt-gh-pages');
 
   grunt.registerTask('server', function(target) {
     if (target === 'dist') {
@@ -247,10 +248,6 @@ module.exports = function(grunt) {
     'copy:dist',
     'rev',
     'usemin'
-  ]);
-
-  grunt.registerTask('aws', [
-    'aws_s3:production'
   ]);
 
   grunt.registerTask('default', [
